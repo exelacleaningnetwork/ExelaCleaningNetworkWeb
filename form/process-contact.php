@@ -1,6 +1,6 @@
 <?php
 
-$to = "";  // Your email here
+$to = "exela.cleaningnetwork@gmail.com";  // Your email here
 $from = $_REQUEST['email'];
 $name = $_REQUEST['name'];
 //$phone = $_REQUEST['phone'];
@@ -11,7 +11,7 @@ $subject = "Contact Form from Cleaning Service";
 $fields = array();
 $fields{"name"} = "First name";
 $fields{"email"} = "Email";
-//$fields{"phone"} = "Phone";
+$fields{"phone"} = "Phone";
 $fields{"message"} = "Message";
 
 $body = "Here is what was sent:\n\n";
