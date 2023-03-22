@@ -132,28 +132,22 @@
 			<div class="row">
 				<div class="col-lg-8">
 					<div class="order-form-box">
-						<form action="https://formsubmit.co/exela.cleaningnetwork@gmail.com" id="orderForm" method="POST" novalidate="novalidate">
+						<form action="https://formsubmit.co/exela.cleaningnetwork@gmail.com" method="POST">
 							<h3>Book your cleaning service in 60 seconds</h3>
 							<div class="divider-line"></div>
-							<div class="successform text-center">
-								<p>Your message was sent successfully!</p>
-							</div>
-							<div class="errorform text-center">
-								<p>Something went wrong, try refreshing and submitting the form again.</p>
-							</div>
 							<h6>Contact Information</h6>
 							<p>This information will be used to contact you and prepare quote.</p>
 							<div class="row">
 								<div class="col-sm-6">
-									<input type="text" class="input-custom input-custom--sm input-full" name="First name" placeholder="First name*">
+									<input type="text" class="input-custom input-custom--sm input-full" name="First_name" placeholder="First name*">
 								</div>
 								<div class="col-sm-6">
-									<input type="text" class="input-custom input-custom--sm input-full" name="Last name" placeholder="Last name*">
+									<input type="text" class="input-custom input-custom--sm input-full" name="Last_name" placeholder="Last name*">
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-sm-6">
-									<input type="text" class="input-custom input-custom--sm input-full" name="Phone number" placeholder="Phone number*">
+									<input type="text" class="input-custom input-custom--sm input-full" name="Phone_number" placeholder="Phone number*">
 								</div>
 								<div class="col-sm-6">
 									<input type="text" class="input-custom input-custom--sm input-full" name="Email" placeholder="E-mail*">
@@ -161,10 +155,10 @@
 							</div>
 							<div class="row">
 								<div class="col-sm-6">
-									<input type="text" class="input-custom input-custom--sm input-full" name="Business name" placeholder="Business name (if applicable)*">
+									<input type="text" class="input-custom input-custom--sm input-full" name="Business_name" placeholder="Business name (if applicable)*">
 								</div>
 								<div class="col-sm-6">
-									<input type="text" class="input-custom input-custom--sm input-full" name="Property address" placeholder="Property address*">
+									<input type="text" class="input-custom input-custom--sm input-full" name="Property_address" placeholder="Property address*">
 								</div>
 							</div>
 							<div class="row">
@@ -179,9 +173,9 @@
 							<h6>Service Requested</h6>
 							<div class="select-wrapper select-wrapper--sm">
 								<select name="service" class="input-custom input-custom--sm">
-									<option value="" disabled selected>- Please Select -</option>
-									<option value="CommercialCleaning">Commercial Cleaning</option>
-									<option value="ResidentialCleaning">Residential Cleaning</option>
+									<option name="none" value="" disabled selected>- Please Select -</option>
+									<option name="Commercial" value="CommercialCleaning">Commercial Cleaning</option>
+									<option name="Residential" value="ResidentialCleaning">Residential Cleaning</option>
 								</select>
 							</div>
 							<div class="divider-line"></div>
@@ -199,7 +193,7 @@
 								<div class="col-sm-8 col-md-7 text-right text-center-xs">
 									<span class="hidden-xs">Any time between &nbsp;</span>
 									<div class="select-wrapper select-wrapper--sm select-time">
-										<select name="time1" class="input-custom input-custom--sm">
+										<select name="Start_time" class="input-custom input-custom--sm">
 											<option value="8:00 AM" selected>8:00 AM</option>
 											<option value="9:00 AM">9:00 AM</option>
 											<option value="10:00 AM">10:00 AM</option>
@@ -213,7 +207,7 @@
 									</div>
 									<span>&nbsp;-&nbsp;</span>
 									<div class="select-wrapper select-wrapper--sm select-time">
-										<select name="time2" class="input-custom input-custom--sm">
+										<select name="End_time" class="input-custom input-custom--sm">
 											<option value="8:00 AM">8:00 AM</option>
 											<option value="9:00 AM">9:00 AM</option>
 											<option value="10:00 AM">10:00 AM</option>
@@ -232,27 +226,27 @@
 							<p>It's all about matching you with the perfect cleaners for your property. Scheduling is flexible.</p>
 							<div class="label-box-wrap">
 								<div>
-									<input type="radio" name="often" id="radio1" value="ones" checked>
+									<input type="radio" name="often_once" id="radio1" value="ones" checked>
 									<label for="radio1"><b>One Time</b></label>
 								</div>
 								<div>
-									<input type="radio" name="often" id="radio2" value="daily">
+									<input type="radio" name="often_daily" id="radio2" value="daily">
 									<label for="radio2"><b>Daily</b></label>
 								</div>
 								<div>
-									<input type="radio" name="often" id="radio3" value="weekly">
+									<input type="radio" name="often_weekly" id="radio3" value="weekly">
 									<label for="radio3"><b>Weekly</b></label>
 								</div>
 								<div>
-									<input type="radio" name="often" id="radio4" value="2 week">
+									<input type="radio" name="often_biweekly" id="radio4" value="2 week">
 									<label for="radio4"><b>Bi-weekly</b></label>
 								</div>
 								<div>
-									<input type="radio" name="often" id="radio5" value="3 week">
+									<input type="radio" name="often_triweekly" id="radio5" value="3 week">
 									<label for="radio5"><b>Tri-weekly</b></label>
 								</div>
 								<div>
-									<input type="radio" name="often" id="radio6" value="4 week">
+									<input type="radio" name="often_monthly" id="radio6" value="4 week">
 									<label for="radio6"><b>Monthly</b></label>
 								</div>
 							</div>
@@ -270,16 +264,6 @@
 								<button type="submit" class="btn btn-wide">BOOK NOW</button>
 							</div>
 							<div class="divider"></div>
-							<div class="successform text-center">
-								<div class="divider-line"></div>
-								<p>Your message was sent successfully!</p>
-								<div class="divider"></div>
-							</div>
-							<div class="errorform text-center">
-								<div class="divider-line"></div>
-								<p>Something went wrong, try refreshing and submitting the form again.</p>
-								<div class="divider"></div>
-							</div>
 						</form>
 					</div>
 				</div>
